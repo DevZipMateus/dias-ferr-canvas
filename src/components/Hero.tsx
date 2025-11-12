@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
@@ -7,8 +8,16 @@ const Hero = () => {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroBg}
+          alt="Fachada Dias Ferr"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -20,15 +29,15 @@ const Hero = () => {
             />
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in drop-shadow-lg">
             Dias Ferr Ltda
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in">
+          <h2 className="text-xl md:text-2xl text-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in drop-shadow-md">
             Distribuidora de ferro e aço com qualidade, agilidade e confiança para sua obra
           </h2>
           
-          <p className="text-lg md:text-xl text-primary font-semibold mb-12 animate-fade-in">
+          <p className="text-lg md:text-xl text-primary font-semibold mb-12 animate-fade-in drop-shadow-md">
             A sua satisfação é a nossa prioridade
           </p>
           
