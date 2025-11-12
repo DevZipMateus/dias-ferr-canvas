@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, ShoppingCart } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -57,17 +58,12 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="text-lg px-8 py-6 border-2 border-primary/60 text-foreground hover:bg-primary/10 hover:border-primary"
-              onClick={() => {
-                const element = document.getElementById("products");
-                if (element) {
-                  const offset = 80;
-                  const elementPosition = element.getBoundingClientRect().top;
-                  const offsetPosition = elementPosition + window.pageYOffset - offset;
-                  window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-                }
-              }}
+              asChild
             >
-              Conheça nossos produtos
+              <Link to="/vitrine">
+                <ShoppingCart className="mr-2 h-5 w-5" />
+                Ver vitrine de produtos
+              </Link>
             </Button>
           </div>
         </div>

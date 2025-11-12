@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,
@@ -11,6 +12,8 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
 
 import arameFarpado from "@/assets/gallery/arame-farpado.jpg";
@@ -105,6 +108,19 @@ const Gallery = () => {
               <CarouselNext className="static translate-y-0" />
             </div>
           </Carousel>
+
+          <div className="mt-12 text-center">
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6"
+              asChild
+            >
+              <Link to="/vitrine">
+                <ShoppingCart className="mr-2 h-5 w-5" />
+                Para ver todos nossos produtos clique aqui
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
