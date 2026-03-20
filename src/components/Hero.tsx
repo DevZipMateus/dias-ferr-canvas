@@ -48,7 +48,7 @@ const Hero = () => {
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6"
               asChild
             >
-              <a href="https://wa.me/553199549228" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5531995492284" target="_blank" rel="noopener noreferrer">
                 <Phone className="mr-2 h-5 w-5" />
                 Solicitar orçamento
               </a>

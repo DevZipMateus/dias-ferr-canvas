@@ -27,7 +27,7 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-foreground mb-1">Telefone</p>
                       <a
-                        href="https://wa.me/553199549228"
+                        href="https://wa.me/5531995492284"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
@@ -94,7 +94,7 @@ const Contact = () => {
                   asChild
                 >
                   <a
-                    href="https://wa.me/553199549228"
+                    href="https://wa.me/5531995492284"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
