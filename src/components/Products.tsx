@@ -97,7 +97,7 @@ const Products = () => {
                   Entre em contato conosco e solicite um orçamento personalizado para sua obra
                 </p>
                 <a
-                  href="https://wa.me/553199549228"
+                  href="https://wa.me/5531995492284"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-md font-medium transition-colors"
